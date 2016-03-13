@@ -19,10 +19,13 @@ defaults/main.yml:
 ```
 # github vundle repo url
 vim_vundle_repo: "https://github.com/VundleVim/Vundle.vim.git" 
+
 # where to install the vundle package
 vim_vundle_dest: "{{ ansible_user_dir }}/.vim/bundle/Vundle.vim" 
+
 # vimrc template file
 vim_vimrc_src: "vimrc.j2" 
+
 # where vimrc should be installed on dest
 vim_vimrc_dest: "{{ ansible_user_dir }}/.vimrc" 
 ```
