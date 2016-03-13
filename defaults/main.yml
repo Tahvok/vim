@@ -1,0 +1,6 @@
+---
+vim_vundle_repo: "https://github.com/VundleVim/Vundle.vim.git"
+vim_vundle_dest: "{{ ansible_user_dir }}/.vim/bundle/Vundle.vim"
+vim_vimrc_src: "vimrc.j2"
+vim_vimrc_dest: "{{ ansible_user_dir }}/.vimrc"
+

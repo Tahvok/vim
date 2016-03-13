@@ -1,0 +1,22 @@
+---
+- block:
+  - name: Include os-specific tasks
+    include: "{{ ansible_os_family }}.yml"
+
+  always:
+  
+  - name: Git clone Vundle
+    git:
+      repo: "{{ vim_vundle_repo }}"
+      dest: "{{ vim_vundle_dest }}"
+  
+  - name: Configure .vimrc
+    template:
+      src: "{{ vim_vimrc_src }}"
+      dest: "{{ vim_vimrc_dest }}"
+  
+  - name: Run PluginInstall
+    shell: vim +PluginInstall +qall
+
+  - name: Run PluginClean
+    shell: vim +PluginClean +qall

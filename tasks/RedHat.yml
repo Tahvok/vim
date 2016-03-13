@@ -1,0 +1,8 @@
+---
+- name: Ensure vim and git is already installed
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - git
+    - vim
