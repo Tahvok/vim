@@ -1,5 +1,5 @@
-Role Name
-=========
+vim
+===
 
 Install vim and configure with vundle (providing vimrc)
 
