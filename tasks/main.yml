@@ -19,4 +19,4 @@
     shell: vim +PluginInstall +qall
 
   - name: Run PluginClean
-    shell: vim +PluginClean +qall
+    shell: vim '+PluginClean!' +qall
